@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { PatientForm } from "@/components/forms/PatientForm";
 import { PasskeyModal } from "@/components/PasskeyModal";
 
-const Home = ({ searchParams }: SearchParamProps) => { //SearchParamProps is type annotation used in typescript
+const Home = ({ searchParams }: SearchParamProps) => {
+  // SearchParamProps is a type annotation used in TypeScript
   const isAdmin = searchParams?.admin === "true";
   
   return (
